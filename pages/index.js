@@ -22,7 +22,7 @@ const Home = () => (
           </div>
           <div className="col-lg-9">
             <Carousel/>
-            <Card/>
+            <Card movieList={MOVIE_DATA}/>
           </div>
         </div>
       </div>
