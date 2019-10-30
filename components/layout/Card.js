@@ -3,6 +3,14 @@ import React from 'react';
 const Card = (props) => {
   const {movieList} = props;
 
+  const shorten = (text) => {
+    if(text && text.length > 100){
+      return text.substr(0, 100) + '...';
+    }
+
+    return text
+  };
+
   const singleMovie = movieList.map(movie => {
    return (
      <div key={movie.id} className="col-lg-4 col-md-6 mb-4">
@@ -12,10 +20,10 @@ const Card = (props) => {
            <h4 className="card-title">
              <a href="#">{movie.name}</a>
            </h4>
-           <h5>{movie.genre}</h5>
-           <h5>{movie.releaseYear}</h5>
+           {/*<h5>{movie.genre}</h5>*/}
+           {/*<h5>{movie.releaseYear}</h5>*/}
            <p className="card-text">
-             {movie.description}
+             {shorten(movie.description)}
            </p>
          </div>
          <div className="card-footer">
