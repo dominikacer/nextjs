@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="903a7f22-0b1e-4651-b754-a1ba6f848213" name="Default Changelist" comment="maintain: performance update">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="903a7f22-0b1e-4651-b754-a1ba6f848213" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/pages/Contact.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/Services.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/movie-api.js" beforeDir="false" afterPath="$PROJECT_DIR$/data/movie-api.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/shared/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/shared/Navbar.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,6 +27,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunDashboard">
@@ -55,7 +56,7 @@
       <workItem from="1572106124975" duration="92000" />
       <workItem from="1572181920323" duration="6000" />
       <workItem from="1572431260852" duration="2686000" />
-      <workItem from="1572434292519" duration="658000" />
+      <workItem from="1572434292519" duration="1502000" />
     </task>
     <task id="LOCAL-00001" summary="maintain: make smaller pieces from boilerplate">
       <created>1571745550063</created>
@@ -92,7 +93,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572431808301</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="maintain: handle fetch data as props instead of state">
+      <created>1572435133057</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1572435133057</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -119,6 +127,7 @@
     <MESSAGE value="maintain: prepare temporary api" />
     <MESSAGE value="maintain: display movies from temporary api" />
     <MESSAGE value="maintain: performance update" />
-    <option name="LAST_COMMIT_MESSAGE" value="maintain: performance update" />
+    <MESSAGE value="maintain: handle fetch data as props instead of state" />
+    <option name="LAST_COMMIT_MESSAGE" value="maintain: handle fetch data as props instead of state" />
   </component>
 </project>
