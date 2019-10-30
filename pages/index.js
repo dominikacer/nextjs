@@ -9,15 +9,7 @@ import Footer from "../components/shared/Footer";
 // temporary api
 import {getMovies} from "../data/movie-api";
 
-const Home = () => {
-  const [movies, setMovies] = useState([]);
-
-  useEffect(() => {
-    getMovies().then((movies) => {
-      setMovies(movies)
-    });
-  }, []);
-
+const Home = (props) => {
   return(
     <div>
       <Head />
@@ -31,19 +23,27 @@ const Home = () => {
             </div>
             <div className="col-lg-9">
               <Carousel/>
-              <Card movieList={movies}/>
+              <Card movieList={props.movies}/>
             </div>
           </div>
         </div>
       </div>
       <Footer />
       <style jsx>{`
-      .home-page{
-        padding: 80px 0 0;
-      }
-    `}</style>
+        .home-page{
+          padding: 80px 0 0;
+        }
+      `}</style>
     </div>
   )
-}
+};
+
+Home.getInitialProps = async () => {
+  const movies = await getMovies();
+  return {
+    movies: movies
+  }
+};
+
 
 export default Home
